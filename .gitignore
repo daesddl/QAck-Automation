@@ -1,1 +1,5 @@
+# NPM Dependencies
 node_modules/
+
+# Obsidian Config Files
+.obsidian/
