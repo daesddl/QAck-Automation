@@ -1,0 +1,63 @@
+
+function taskA(x, y) {
+  let z1= 0;
+  if (y<10){
+    z1 = x + y; 
+  }else {
+    if (y>= 100) {
+        z1 = x * y;
+    }
+  }
+  return z1;
+}
+
+let testx = 2;
+let testy = 150;
+console.log (taskA(testx,testy));
+
+let testa = 1;
+let testb = 2;
+console.log (taskA(testa,testb));
+
+function taskB (x,y){
+    let z1= 0;
+    z1 = y < 10? x + y: y>=100? x * y: "unexpected error";
+    return z1;  
+}
+console.log (taskB(testa,testb));
+
+let taskAlpha = 2
+let taskBeta = 3
+let taskOperator = 'multiply'
+
+
+function calc(operator, alpha, beta) {
+  let task2= 0;
+  switch (operator) {
+    case 'add':
+    task2 = alpha + beta;
+    break;
+    case 'subtract':
+    task2 = alpha - beta;
+    break; 
+    case 'multiply':
+    task2 = alpha * beta;
+    break;
+    case 'divide':
+    task2 = alpha / beta;
+    break;
+  }
+  return task2;
+}
+
+console.log (calc(taskOperator,taskAlpha,taskBeta));
+
+function calulateDiscount (ransom) {
+ let discount;
+ ransom >=0 && ransom<= 350 ? discount = '0 %': ransom >=351 && ransom <= 1350 ? discount = '15 %': ransom >=1351 && ransom <= 2700 ? discount = '30 %': ransom >=2701 && ransom <= 6500 ? discount = '50 %':'na';
+ return discount; 
+}
+
+let discountTest= 5000;
+console.log (calulateDiscount(discountTest));
+
